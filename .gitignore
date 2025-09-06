@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Environment
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+venv/
+.env/
+codec-server-env/
+
+# Test & Coverage
+.coverage
+htmlcov/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Misc
+*.bak
+*.swp

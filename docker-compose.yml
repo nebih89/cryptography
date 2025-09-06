@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  codec-server:
+    build: .
+    container_name: codec-server
+    ports:
+      - "6000:6000"
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - temporal-local-net
+
+networks:
+  temporal-local-net:
+    driver: bridge
+    external: true
